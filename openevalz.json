@@ -1,0 +1,45 @@
+{
+  "openevalz_version": 1,
+  "eval": {
+    "id": "air_bench",
+    "slug": "air-bench",
+    "title": "AIR Bench: AI Risk Benchmark",
+    "group": "Knowledge",
+    "tags": [],
+    "source": "core"
+  },
+  "upstream": {
+    "repo": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "path": "src/inspect_evals/air_bench",
+    "inspect_ai": "0.3.260",
+    "eval_version": "4-A",
+    "dependency": ""
+  },
+  "execution": {
+    "class": "plain",
+    "cost_class": "medium",
+    "sandbox": null,
+    "requires_internet": false,
+    "fast": false,
+    "supports_k8s": false,
+    "environment": ""
+  },
+  "tasks": [
+    {
+      "name": "air_bench",
+      "samples": 5694
+    }
+  ],
+  "total_samples": 5694,
+  "external_assets": [
+    {
+      "type": "huggingface",
+      "source": "stanford-crfm/air-bench-2024",
+      "state": "pinned"
+    }
+  ],
+  "scaffolds": [
+    "baseline"
+  ],
+  "generated": "2026-08-25"
+}
